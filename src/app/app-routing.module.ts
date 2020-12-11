@@ -7,6 +7,7 @@ import { WorkComponent } from './work/work.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'whoweare', component: WhoweareComponent},
   { path: 'work', component: WorkComponent},
   { path: 'involved', component: InvolvedComponent},

@@ -2,23 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import {MatToolbarModule, MatButtonModule, MatIconModule} from '@angular/material';
+import {MatToolbarModule, MatButtonModule, MatIconModule, MatSidenavModule, MatListModule} from '@angular/material';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { InvolvedComponent } from './involved/involved.component';
 import { WorkComponent } from './work/work.component';
 import { WhoweareComponent } from './whoweare/whoweare.component';
+import { AuthModule } from './auth/auth.module';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     HomeComponent,
     InvolvedComponent,
     WorkComponent,
-    WhoweareComponent
+    WhoweareComponent,
+  
+    
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,11 @@ import { WhoweareComponent } from './whoweare/whoweare.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    AuthModule,
+    LayoutModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
