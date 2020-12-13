@@ -12,6 +12,8 @@ import { WhoweareComponent } from './whoweare/whoweare.component';
 import { AuthModule } from './auth/auth.module';
 import { LayoutModule } from '@angular/cdk/layout';
 
+import { LocationsComponent } from './locations/locations.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,8 +21,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     InvolvedComponent,
     WorkComponent,
     WhoweareComponent,
-  
-    
+    LocationsComponent,
   ],
   imports: [
     BrowserModule,
